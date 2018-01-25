@@ -15,8 +15,7 @@ class String
   end
 
   def count_sentences
-    senence_arr = self.split(/[".", "!", "?"]/)
-    sentence_arr.count
+    self.scan(/\s*[\w|\s]+[\.|\?|\!]\s*/).length
   end
 
 end
